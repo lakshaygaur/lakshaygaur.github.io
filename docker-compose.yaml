@@ -1,0 +1,11 @@
+version: "2.0"
+
+services:
+  website-app:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    image: website
+    container_name: website-app
+    command: |
+      bash -c "watch ps"
